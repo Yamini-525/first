@@ -1,1 +1,132 @@
-hello all!!
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration Form</title>
+    <style>
+      body {
+        background-color: orchid;
+        width: 300px;
+        padding: 50px;
+        border: 5px solid black;
+        margin: 50px auto;
+        border-radius: 1px;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0px;
+        padding: 20px;
+      }
+      #details {
+        font-size: 20px;
+        font-style: bold;
+      }
+      #countries {
+        font-size: 20px;
+        font-style: bold;
+      }
+      #areaof .area {
+        font-size: 20px;
+        font-style: bold;
+      }
+      #areaof {
+        font-size: 15px;
+      }
+      #password {
+        font-size: 20px;
+      }
+      #aggrement {
+        font-size: 20px;
+      }
+      .cond {
+        font-size: 20px;
+      }
+      button:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+    <br />
+
+    <main>
+      <form action="submit.php" method="POST">
+        <!-- Personal Information Section -->
+        <div id="details">
+          <label class="detail">Name</label>
+          <input type="text" /><br />
+          <label>Email</label>
+          <input type="email" /><br />
+          <label>Date Of Birth</label>
+          <input type="date" />
+        </div>
+        <br />
+        <!-- Country Selection -->
+        <div id="countries">
+          <label class="countries">Country</label>
+          <select>
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="Canada">Canada</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Italy">Italy</option>
+            <option value="Russia">Russia</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+          </select>
+        </div>
+        <br />
+
+        <!-- Area of Interests -->
+        <div id="areaof">
+          <label class="area">Area of Interests</label>
+          <br />
+          <label><input type="checkbox" /> Coding</label><br />
+          <label><input type="checkbox" /> Web Development</label><br />
+          <label><input type="checkbox" /> Data Science</label><br />
+          <label><input type="checkbox" /> Artificial Intelligence</label><br />
+          <label><input type="checkbox" /> Machine Learning</label><br />
+        </div>
+        <br />
+
+        <!-- Password Fields -->
+        <div id="password">
+          <label>Password</label>
+          <input type="password" /><br />
+          <label>Confirm Password</label>
+          <input type="password" />
+        </div>
+        <br />
+
+        <!-- Agreement Section -->
+        <label for="agreeCheckbox" id="aggrement">
+          <input type="checkbox" id="agreeCheckbox" required /> I agree to the
+          Terms and Conditions
+        </label>
+        <details>
+          <summary class="cond">Terms and Conditions</summary>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            felis eget nunc aliquet sodales. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Nunc sed leo
+            tellus. Vivamus dapibus, arcu sit amet efficitur pulvinar, lorem
+            enim tincidunt arcu, sed tempor purus elit eget arcu.
+          </p>
+          <p>
+            Etiam tristique neque vel tellus varius, vitae euismod odio
+            hendrerit. Proin at arcu sed ex volutpat fringilla. Donec vitae
+            sodales ipsum. Integer malesuada quam at mauris fringilla malesuada.
+            Curabitur nec nulla quis lorem tincidunt rhoncus. Sed at enim ac
+            lorem elementum viverra.
+          </p>
+        </details>
+        <br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" disabled class="button" />
+      </form>
+    </main>
+  </body>
+</html>
